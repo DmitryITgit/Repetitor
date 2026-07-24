@@ -19,6 +19,6 @@ export const images = {
   teacher: teacherImg,
   about: aboutImg,
   gallery: [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6],
-  certificates: [cert1, cert2, cert3, cert4],
+  certificates: [sert1, cert2, cert3, cert4],
   students: [student1, student2, student3, student4],
 };
