@@ -47,7 +47,7 @@ export default function Footer() {
           <div className={styles.contact}>
             <h4>Связаться</h4>
             <a href="#contact">Записаться на занятие</a>
-            <a href="mailto:hello@elena-tutor.ru">hello@elena-tutor.ru</a>
+            <a href="mailto:kirliliya@yandex.ru">kirliliya@yandex.ru</a>
           </div>
         </div>
 
