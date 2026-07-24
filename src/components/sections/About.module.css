@@ -1,0 +1,170 @@
+.about {
+  background: var(--color-white);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.visual {
+  position: relative;
+}
+
+.imageFrame {
+  position: relative;
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.imageAccent {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: 20px;
+  bottom: 20px;
+  border-radius: var(--radius-xl);
+  background: linear-gradient(135deg, var(--color-purple-soft), var(--color-blue-soft));
+  z-index: 0;
+}
+
+.image {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.experienceBadge {
+  position: absolute;
+  bottom: -16px;
+  right: -16px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, var(--color-purple), var(--color-blue));
+  border-radius: 50%;
+  color: white;
+  box-shadow: var(--shadow-glow-purple);
+}
+
+.expNumber {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.expText {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.9;
+}
+
+.description {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+  color: var(--color-text-muted);
+  margin-bottom: 1rem;
+}
+
+.extended {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--color-text-light);
+  margin-bottom: 2.5rem;
+}
+
+.reasons {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+
+.reason {
+  display: flex;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: var(--color-cream);
+  border-radius: var(--radius-md);
+  border: 1px solid transparent;
+  transition: all var(--transition-base);
+}
+
+.reason:hover {
+  border-color: var(--color-beige-dark);
+  box-shadow: var(--shadow-sm);
+  transform: translateY(-2px);
+}
+
+.reasonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: var(--radius-sm);
+  background: var(--color-purple-soft);
+  color: var(--color-purple);
+  transition: all var(--transition-base);
+}
+
+.reason:hover .reasonIcon {
+  background: var(--color-purple);
+  color: white;
+}
+
+.reason h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--color-text);
+}
+
+.reason p {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--color-text-muted);
+}
+
+@media (min-width: 768px) {
+  .reasons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr 1.1fr;
+    gap: 5rem;
+  }
+
+  .visual {
+    order: -1;
+  }
+}
+
+@media (max-width: 480px) {
+  .experienceBadge {
+    width: 80px;
+    height: 80px;
+    bottom: -8px;
+    right: -8px;
+  }
+
+  .expNumber {
+    font-size: 1.5rem;
+  }
+}
