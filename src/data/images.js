@@ -6,7 +6,7 @@ import gallery3 from '../assets/images/gallery-3.jpg';
 import gallery4 from '../assets/images/gallery-4.jpg';
 import gallery5 from '../assets/images/gallery-5.jpg';
 import gallery6 from '../assets/images/gallery-6.jpg';
-import cert1 from '../assets/images/Cert-1.jpg';
+import cert1 from '../assets/images/sert-1.jpg';
 import cert2 from '../assets/images/cert-2.jpg';
 import cert3 from '../assets/images/cert-3.jpg';
 import cert4 from '../assets/images/cert-4.jpg';
